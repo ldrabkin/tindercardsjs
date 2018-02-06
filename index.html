@@ -12,6 +12,33 @@
       body{
         font-family: 'Helvetica-Neue', 'HelveticaNeue', arial, sans-serif;
         color: #434343;
+        background-color:#d0d0d0;
+      }
+
+      .buttons {
+        position: fixed;
+        bottom:0;
+        padding-bottom:2%;
+        left:30%;
+        right:30%;
+      }
+
+      .button  {
+        background-color: white;
+        display:inline-block;
+        padding:6px;
+        padding-bottom:2px;
+        border-radius: 100%
+      }
+      .button img {
+        width:80px;
+        height:80px;
+      }
+      .l {
+        float: right;
+      }
+      .d {
+        float: left;
       }
       
       .tc-card-name{
@@ -19,11 +46,12 @@
       }
       
       #main{
-        position:relative;
-        width:320px;
-        height:480px;
+        /*position:relative;
+        width:90%;
+        height:90%;
+        background-color: blue;
         left:50%;
-        margin-left:-160px;
+        margin-left:-160px;*/
       }
     </style>
     
@@ -42,9 +70,15 @@
         
         // Define cards
         var cards = [
-          new Tindercardsjs.card(2, 'Geordi Laforge', 'I like big butts', 'gfx/pics/01.jpg'),
-          new Tindercardsjs.card(1, 'Agro Picard', 'Hates Klingons, likes beer.', 'gfx/pics/02.jpg'),
-          new Tindercardsjs.card(0, 'Jean-Luc, Worf & William', 'Swipe right if you also like funny hats like us :D', 'gfx/pics/03.jpg')
+          new Tindercardsjs.card(1, '', '', 'gfx/pics/01.jpg'),
+          new Tindercardsjs.card(2, '', '', 'gfx/pics/02.jpg'),
+          new Tindercardsjs.card(3, '', '', 'gfx/pics/03.jpg'),
+          new Tindercardsjs.card(4, '', '', 'gfx/pics/04.jpg'),
+          new Tindercardsjs.card(5, '', '', 'gfx/pics/05.jpg'),
+          new Tindercardsjs.card(6, '', '', 'gfx/pics/06.jpg'),
+          new Tindercardsjs.card(7, '', '', 'gfx/pics/07.jpg'),
+          new Tindercardsjs.card(8, '', '', 'gfx/pics/08.jpg'),
+          new Tindercardsjs.card(9, '', '', 'gfx/pics/09.jpg'),
         ];
         
         // Render cards
@@ -54,7 +88,7 @@
         });
       });
     </script>
-    
+    <div class="buttons"><div class="button d"><img src="gfx/dislike.png" /></div><div class="button l"><img src="gfx/like.png" /></div></div>
   </body>
   
 </html>

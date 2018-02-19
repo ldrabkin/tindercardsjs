@@ -23,6 +23,29 @@
         right:30%;
       }
 
+      .reload {
+        position:fixed;
+        border-radius: 20px;
+        height:80%;
+        width:80%;
+        left:10%;
+        top:6%;
+        background-color: #666;
+        z-index:0;
+        
+      }
+
+      .reload p {
+        font-size: 40px;
+        font-weight:bold;
+        padding-top:40%;
+        text-align:center;
+      }
+
+      a .reload p {
+        color:white;
+      }
+
       .button  {
         background-color: white;
         display:inline-block;
@@ -88,7 +111,8 @@
         });
       });
     </script>
-    <div class="buttons"><div class="button d"><img src="gfx/dislike.png" /></div><div class="button l"><img src="gfx/like.png" /></div></div>
+    <a href="/"><div class="reload"><p>Click here for more cards</p></div></a>
+    <!-- <div class="buttons"><div class="button d"><img src="gfx/dislike.png" /></div><div class="button l"><img src="gfx/like.png" /></div></div> -->
   </body>
   
 </html>
